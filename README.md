@@ -11,3 +11,4 @@ Este repositorio se utilizará para crear el código de el proyecto de informati
 > [!TIP]
 > INSTALAR -> Git y Github / Visual estudio code en pc
 
+[![Captura-de-pantalla-2024-11-20-232833.png](https://i.postimg.cc/qqRNgVHc/Captura-de-pantalla-2024-11-20-232833.png)](https://postimg.cc/dkbsSf1D)
