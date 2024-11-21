@@ -4,7 +4,8 @@ Este repositorio se utilizará para crear el código de el proyecto de informati
 
 > [!IMPORTANT]
 > El lenguaje a utilizar en este Proyecto principalmente es de C
-> [!TIP]
+
+> [!NOTE]
 > UN CONSEJO
 > instala las extenciones de lenguane c en tu pc para mejorar funcionalidades
 
