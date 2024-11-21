@@ -10,6 +10,5 @@ Este repositorio se utilizará para crear el código de el proyecto de informati
 > instala las extenciones de lenguane C en tu pc para mejorar funcionalidades
 
 > [!TIP]
-> INSTALAR -> Git y Github en pc
-> INSTALAR -> Visual estudio code en pc
+> INSTALAR -> Git y Github / Visual estudio code en pc
 
