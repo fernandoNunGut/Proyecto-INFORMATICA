@@ -1,5 +1,5 @@
 # Proyecto-INFORMATICA
-Este repositorio se utilizará para crear el código de el proyecto de informatica.
+## A continuacion se estara entregando un introducción a el trabajo
 
 
 > [!IMPORTANT]
