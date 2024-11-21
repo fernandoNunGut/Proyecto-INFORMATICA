@@ -6,13 +6,20 @@
 > - Trabajo de forma remota git y github escritorio
 >
 ## Pasos para crear el codigo
-<summary>
-  **Paso 1: Lectura de datos**
-  El programa debe leer la magnitud de cada temblor de un archivo. Asumiendo que hay un archivo 
-  de texto llamado "temblores.txt" que contiene las magnitudes de cada dia en el mes (30 dias).
-  ### Paso 2: Funciones a implementar
-  
-</summary>
+<details>
+ <summary> PASO 1: Lectura de datos</summary>
+ El programa debe leer la magnitud de cada temblor de un archivo. Asumiendo que hay un archivo 
+ de texto llamado "temblores.txt" que contiene las magnitudes de cada dia en el mes (30 dias).
+</details>
+<details>
+ <summary>  PASO 2: Funciones a implementar</summary>
+ calcular_diferencias_consecutivas: Esta función calcula las diferencias entre magnitudes consecutivas para determinar si la tendencia es creciente, decreciente o variable.
+Entrada: Un arreglo con las magnitudes y el número de días.
+Salida: Devuelve un valor entero:
+1 si es creciente,
+-1 si es decreciente,
+0 si es variable.
+</details>
 
 ### En la siguiente imagen hay un ejemplo de codigo donde se utiliza freeopen
 > [!IMPORTANT]
