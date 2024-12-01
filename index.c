@@ -75,7 +75,7 @@ int main() {  // Devuelve 0 si todo ha ido bien, 1 si hay errores
     int fuertes = contar_temblor_fuerte(temblores, DIAS, LIMITE_FUERTE);
 
     // Mostrar resultados
-    printf("Análisis de la Actividad Sísmica:\n");  // Mostrar un mensaje de resultados
+    printf("Analisis de la Actividad Sismica:\n");  // Mostrar un mensaje de resultados
     printf("- Promedio de las magnitudes: %.2f\n", promedio);  // Mostrar el promedio
 
     printf("- Tendencia: ");  // Mostrar la tendencia
@@ -87,13 +87,13 @@ int main() {  // Devuelve 0 si todo ha ido bien, 1 si hay errores
         printf("Variable\n");  // Mostrar un mensaje de resultados
     }
 
-    printf("- Número de temblores fuertes (magnitud > %.1f): %d\n", LIMITE_FUERTE, fuertes);  // Mostrar el número de temblores fuertes
+    printf("- Numero de temblores fuertes (magnitud > %.1f): %d\n", LIMITE_FUERTE, fuertes);  // Mostrar el número de temblores fuertes
 
     // Evaluar la actividad sísmica en general
     if (fuertes > 3) {  // Si hay más de 3 temblores fuertes
-        printf("- Actividad sísmica: Alta\n");  // Mostrar un mensaje de resultados
+        printf("- Actividad sismica: Alta\n");  // Mostrar un mensaje de resultados
     } else {  // Si no hay más de 3 temblores fuertes
-        printf("- Actividad sísmica: Baja\n");  // Mostrar un mensaje de resultados
+        printf("- Actividad sismica: Baja\n");  // Mostrar un mensaje de resultados
     }
 
     return 0;  // Devolver 0 para indicar que todo ha ido bien
