@@ -19,7 +19,7 @@ int leer_datos(float temblores[FILAS][DIAS], int filas, int dias, char nombre_ar
     for (int i = 0; i < filas; i++) { // Leer cada fila
         for (int j = 0; j < dias; j++) { // Leer cada día
             if (fscanf(archivo, "%f", &temblores[i][j]) != 1 || temblores[i][j] <= 0) { // Comprobar si se pudo leer el valor y si es positivo
-                printf("Error en los datos del archivo en el día %d. \nAsegúrese de que todos los valores sean positivos o que el archivo este con los dias totales [30].\n", j + 1); // Mostrar un mensaje de error
+                printf("Error en los datos del archivo en el día %d. \nAsegúrese de que todos los valores sean positivos.\n Asegurarse de que sean valores numericos o que el archivo este con los dias totales [30].\n", j + 1); // Mostrar un mensaje de error
                 fclose(archivo); // Cerrar el archivo
                 return 0; // Error en los datos
             }
