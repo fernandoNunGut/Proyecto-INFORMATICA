@@ -12,19 +12,19 @@ int leer_datos(float temblores[FILAS][DIAS], int filas, int dias, char nombre_ar
     FILE *archivo = fopen(nombre_archivo, "r"); // Abrir el archivo
 
     if (archivo == NULL) { // Si no se pudo abrir el archivo
-        printf("Error: No se pudo abrir el archivo '%s'.\nVerifique el nombre e intente nuevamente o verifique que el contenitdo solo tenga valores numericos.\n", nombre_archivo); // Mostrar un mensaje de error
+        printf("Error: No se pudo abrir el archivo '%s'.\nVerifique el nombre e intente nuevamente", nombre_archivo); // Mostrar un mensaje de error
         return 0; // Error al abrir el archivo
     }
 
     for (int i = 0; i < filas; i++) { // Leer cada fila
         for (int j = 0; j < dias; j++) { // Leer cada día
             if (fscanf(archivo, "%f", &temblores[i][j]) != 1 || temblores[i][j] <= 0) { // Comprobar si se pudo leer el valor y si es positivo
-                printf("Error en los datos del archivo en el día %d. \nAsegúrese de que todos los valores sean positivos.\n Asegurarse de que sean valores numericos o que el archivo este con los dias totales [30].\n", j + 1); // Mostrar un mensaje de error
+                printf("Error en los datos del archivo en el dia %d. \nAsegurese de que todos los valores sean positivos o que el archivo este con los dias totales [30].\n", j + 1); // Mostrar un mensaje de error
                 fclose(archivo); // Cerrar el archivo
                 return 0; // Error en los datos
             }
             // Mostrar la magnitud leída para cada día
-            printf("Leída la magnitud del temblor del día %d: %.1f\n", j + 1, temblores[i][j]); // Mostrar la magnitud leída
+            printf("Leida la magnitud del temblor del dia %d: %.1f\n", j + 1, temblores[i][j]); // Mostrar la magnitud leída
         }
     }
 
@@ -95,7 +95,7 @@ void mostrar_resultado(float temblores[FILAS][DIAS], int dias) {
     int fuertes = contador_temblores_fuertes(temblores, dias, LIMITE_FUERTE);
 
     // Mostrar resultados
-    printf("Análisis de la Actividad Sísmica:\n"); // Mostrar el título
+    printf("Analisis de la Actividad Sismica:\n"); // Mostrar el título
     printf("- Promedio de las magnitudes: %.2f\n", promedio); // Mostrar el promedio
 
     printf("- Tendencia: "); // Mostrar la tendencia
@@ -107,13 +107,13 @@ void mostrar_resultado(float temblores[FILAS][DIAS], int dias) {
         printf("Variable\n"); // Mostrar el mensaje de variable
     }
 
-    printf("- Número de temblores fuertes (magnitud > %.1f): %d\n", LIMITE_FUERTE, fuertes); // Mostrar el número de temblores fuertes
+    printf("- Numero de temblores fuertes (magnitud > %.1f): %d\n", LIMITE_FUERTE, fuertes); // Mostrar el número de temblores fuertes
 
     // Evaluar la actividad sísmica en general
     if (fuertes > 3) { // Si hay más de 3 temblores fuertes
-        printf("- Actividad sísmica: Alta\n"); // Mostrar el mensaje de alta actividad sísmica
+        printf("- Actividad sismica: Alta\n"); // Mostrar el mensaje de alta actividad sísmica
     } else { // Si no hay más de 3 temblores fuertes
-        printf("- Actividad sísmica: Baja\n"); // Mostrar el mensaje de baja actividad sísmica
+        printf("- Actividad sismica: Baja\n"); // Mostrar el mensaje de baja actividad sísmica
     }
 }
 
@@ -126,7 +126,7 @@ int main() {
     char nombre_archivo[100]; // Declarar el nombre del archivo
     int archivo_cargado = 0; // Declarar la variable para almacenar el resultado de la carga del archivo
 
-    printf("Bienvenido al analizador de actividad sísmica.\n"); // Mostrar el título
+    printf("Bienvenido al analizador de actividad sismica.\n"); // Mostrar el título
     printf("Por favor, ingrese el nombre del archivo con los datos (o escriba 'exit' para salir): "); // Mostrar el mensaje de ingreso del nombre del archivo
 
     while (!archivo_cargado) { // Mientras no se cargue el archivo  
@@ -142,7 +142,7 @@ int main() {
         archivo_cargado = leer_datos(temblores, FILAS, DIAS, nombre_archivo); // Llamar a la función para cargar el archivo
 
         if (!archivo_cargado) { // Si no se cargó el archivo
-            printf("Por favor, ingrese un nombre de archivo válido (o escriba 'exit' para salir): "); // Mostrar el mensaje de error
+            printf("Por favor, ingrese un nombre de archivo valido (o escriba 'exit' para salir): "); // Mostrar el mensaje de error
         }
     }
 
