@@ -107,7 +107,7 @@ void mostrar_resultado(float temblores[FILAS][DIAS], int dias) {
         printf("Variable\n"); // Mostrar el mensaje de variable
     }
 
-    printf("- Numero de temblores fuertes (magnitud > %.1f): %d\n", LIMITE_FUERTE, fuertes); // Mostrar el número de temblores fuertes
+    printf("- Numero de temblores fuertes (magnitud >= %.1f): %d\n", LIMITE_FUERTE, fuertes); // Mostrar el número de temblores fuertes
 
     // Evaluar la actividad sísmica en general
     if (fuertes > 3) { // Si hay más de 3 temblores fuertes
